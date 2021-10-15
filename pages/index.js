@@ -1,6 +1,5 @@
-import Navbar from "../components/Navbar";
 import {queries, request} from "../services/datocms";
-import {createGlobalStyle} from "styled-components";
+
 import Header from "../blocks/Header/header";
 import MainPage from "../blocks/Main/mainPage";
 import About from "../blocks/About/about";
@@ -10,13 +9,8 @@ import Certification from "../blocks/Certification/certification";
 import Partners from "../blocks/Partners/partners";
 import Contacts from "../blocks/Contacts/contacts";
 import Footer from "../blocks/Footer/footer";
-
-const GlobalStyle = createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }`
+import App from "./App";
+import {Global} from "../theme/Global";
 
 
 export async function getStaticProps() {
@@ -34,7 +28,8 @@ export default function Index({data}) {
   const  { allMenus } = data;
   return (
       <div>
-        <GlobalStyle/>
+        <App/>
+        <Global/>
         <Header menuItems = {allMenus}/>
         <MainPage/>
         <About/>

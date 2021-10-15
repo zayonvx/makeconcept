@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@styled-system/theme-get": "^5.1.2",
     "dotenv": "^10.0.0",
     "graphql": "^15.6.1",
     "graphql-request": "^3.5.0",
@@ -16,10 +17,14 @@
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "styled-components": "^5.3.1"
+    "styled-components": "^5.3.1",
+    "styled-system": "^5.1.5",
+    "styled-theme": "^0.3.3",
+    "url-loader": "^4.1.1"
   },
   "devDependencies": {
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "file-loader": "^6.2.0"
   }
 }

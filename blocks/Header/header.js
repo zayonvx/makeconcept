@@ -1,11 +1,12 @@
 import React from 'react';
-import NavBar from "../../components/Navbar";
+import Container from "./styles";
+import NavBar from "../../components/NavBar/Navbar";
 
 const Header = ({menuItems}) => {
     return (
-        <div>
+        <Container>
             <NavBar menuItems={menuItems}/>
-        </div>
+        </Container>
     );
 };
 
