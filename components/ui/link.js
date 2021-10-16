@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import textLink from "../../theme/text";
+import {textLink} from "../../theme/text";
 import {Row} from "./row";
 
 let StyledLink = styled(Row);

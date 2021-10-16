@@ -1,6 +1,7 @@
 import {createGlobalStyle} from "styled-components";
 import colors from "./colors";
 import Montserrat from "../public/fonts/Montserrat-Regular.ttf"
+import MontserratBold from "../public/fonts/Montserrat-Bold.ttf"
 
 export const Global =  createGlobalStyle`
   
@@ -9,6 +10,13 @@ export const Global =  createGlobalStyle`
     font-style: normal;
     font-weight: 400;
     src: url(${Montserrat});
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url(${MontserratBold});
   }
   
   html {

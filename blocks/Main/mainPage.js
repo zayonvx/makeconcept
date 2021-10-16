@@ -7,7 +7,7 @@ import 'swiper/css/bundle';
 import SwiperCore, {
     EffectFade,Navigation,Pagination,Autoplay
 } from 'swiper';
-import {Container, MainTextBlock, SliderImage} from "./styles";
+import {Container, MainTextBlock, MainTextHeader, SliderImage} from "./styles";
 
 SwiperCore.use([EffectFade,Navigation,Pagination,Autoplay]);
 
@@ -16,7 +16,7 @@ const MainPage = ({title, slider}) => {
         <Container>
             <div>
             <Swiper spaceBetween={3000} effect={'fade'} speed={5000} className="mySwiper" autoplay={{
-                "delay": 20000}}>
+                "delay": 10000}}>
                 {slider.map(slide =>
                     <SwiperSlide>
                         <motion.div
@@ -31,7 +31,7 @@ const MainPage = ({title, slider}) => {
             </Swiper>
             </div>
             <MainTextBlock>
-                <h1>{title}</h1>
+                <MainTextHeader>{title}</MainTextHeader>
             </MainTextBlock>
         </Container>
     );

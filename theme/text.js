@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import colors from "./colors";
 
-const textLink = styled.a`
+export const textLink = styled.a`
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -12,4 +12,10 @@ const textLink = styled.a`
     color: ${colors.text.accent};
   }
 `
-export default textLink;
+
+export const textHeader = styled.h1`
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: ${colors.text.header};
+`

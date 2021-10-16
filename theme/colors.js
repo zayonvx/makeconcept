@@ -7,8 +7,10 @@ const colors = {
     },
     text: {
         primary: palette.white,
-        accent: palette.orange,
-    }
+        accent: palette.lightOrange,
+
+        header: palette.whiteDark,
+    },
 }
 
 export default colors;
