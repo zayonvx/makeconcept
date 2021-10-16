@@ -3,6 +3,7 @@ import styled from "styled-components";
 import colors from "./colors";
 
 const textLink = styled.a`
+  font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3s ease;

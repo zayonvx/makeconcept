@@ -1,16 +1,17 @@
 import React from 'react';
 import Link from 'next/link'
-import {StyledLink} from "../ui/link";
+import StyledLink from "../ui/link";
+import Container from "./styles";
 
 const NavBar = ({menuItems}) => {
     return (
-        <div>
+        <Container>
             {menuItems.map(menu =>
                 <Link key={menu.extid} href={menu.link} passHref>
                     <StyledLink>{menu.title}</StyledLink>
                 </Link>
             )}
-        </div>
+        </Container>
     );
 };
 

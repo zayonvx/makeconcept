@@ -5,9 +5,12 @@ import colors from "../../theme/colors";
 
 const Container = styled(Row)`
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
     background: ${colors.bg.primary};
+    opacity: .8;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
 `
 
 export default Container;
