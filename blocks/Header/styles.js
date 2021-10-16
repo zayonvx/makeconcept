@@ -6,7 +6,7 @@ import colors from "../../theme/colors";
 const Container = styled(Row)`
     width: 100%;
     background: ${colors.bg.primary};
-    opacity: .8;
+    opacity: .95;
     justify-content: space-between;
     align-items: center;
     padding-left: 25px;
