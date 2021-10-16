@@ -11,6 +11,7 @@
   "dependencies": {
     "@styled-system/theme-get": "^5.1.2",
     "dotenv": "^10.0.0",
+    "framer-motion": "^4.1.17",
     "graphql": "^15.6.1",
     "graphql-request": "^3.5.0",
     "graphql-tag": "^2.12.5",

@@ -11,6 +11,9 @@ const Container = styled(Row)`
     align-items: center;
     padding-left: 25px;
     padding-right: 25px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
 `
 
 export default Container;
