@@ -13,9 +13,6 @@ export const textLink = styled.a`
   }
 `
 
-export const textHeader = styled.h1`
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: ${colors.text.header};
+export const hiddenHeader = styled.h1`
+  display: none;
 `

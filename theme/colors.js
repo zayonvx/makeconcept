@@ -11,6 +11,14 @@ const colors = {
 
         header: palette.whiteDark,
     },
+    button: {
+        buttonBackground: palette.mint,
+        buttonText: palette.whiteDark,
+        hover: {
+            buttonBackground: palette.pink,
+        },
+    },
+
 }
 
 export default colors;

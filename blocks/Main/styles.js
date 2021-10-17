@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import colors from "../../theme/colors";
-import {textHeader} from "../../theme/text";
+import {ButtonMint} from "../../components/ui/button";
 
 export const SliderImage = styled.img`
   width: 100%;
@@ -15,15 +15,9 @@ export const Container = styled.div`
   position: relative;
 `
 
-export const MainTextBlock = styled.div`
-  display: flex;
-  padding: 25px;
+export const ButtonMain = styled(ButtonMint)`
+  position: absolute;
   z-index: 10;
   align-self: center;
-  position: absolute;
-  top: 40%;
-  background: rgba(25,25,25,0.7);
-`
-export const MainTextHeader = styled(textHeader)`
-
+  top: 50vh;
 `
