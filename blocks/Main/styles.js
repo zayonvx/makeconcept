@@ -11,8 +11,8 @@ export const Container = styled.div`
   flex-direction: column;
   max-width: 100%;
   height: auto;
-  margin: 0 auto;
   position: relative;
+  margin-bottom: 50px;
 `
 
 export const ButtonMain = styled(ButtonMint)`
@@ -20,4 +20,7 @@ export const ButtonMain = styled(ButtonMint)`
   z-index: 5;
   align-self: center;
   top: 50%;
+`
+export const HiddenHeader = styled.h1`
+  display: none;
 `

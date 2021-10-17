@@ -4,6 +4,7 @@ import {sectionHeader, textBlock} from "../../theme/text";
 
 export const ContainerAbout = styled(Container)`
   flex-direction: column;
+  margin-bottom: 50px;
 `
 
 export const Header = styled(sectionHeader)`

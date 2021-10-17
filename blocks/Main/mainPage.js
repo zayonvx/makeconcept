@@ -7,7 +7,7 @@ import 'swiper/css/bundle';
 import SwiperCore, {
     EffectFade,Navigation,Pagination,Autoplay
 } from 'swiper';
-import {ButtonMain, Container, MainTextBlock, MainTextHeader, SliderImage} from "./styles";
+import {ButtonMain, Container, HiddenHeader, SliderImage} from "./styles";
 import {hiddenHeader} from "../../theme/text";
 
 SwiperCore.use([EffectFade,Navigation,Pagination,Autoplay]);
@@ -31,9 +31,9 @@ const MainPage = ({data}) => {
                     )}
                 </Swiper>
             </div>
-            <hiddenHeader>
+            <HiddenHeader>
                 {data.title}
-            </hiddenHeader>
+            </HiddenHeader>
             <ButtonMain>Подробнее</ButtonMain>
         </Container>
     );
