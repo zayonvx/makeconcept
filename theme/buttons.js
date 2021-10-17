@@ -5,7 +5,7 @@ export const ButtonBase = styled.button`
   border: 1px solid black;
   border-radius: 10px;
   padding: 20px 50px;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 2px;

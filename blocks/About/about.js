@@ -1,12 +1,20 @@
 import React from 'react';
-import {ContainerAbout, Header} from "./style";
+import {ContainerAbout, Header, TextBlockAbout, WrapperText} from "./style";
+import {StructuredText} from "react-datocms";
 
-const About = () => {
+
+
+const About = ({data}) => {
     return (
-        <div></div>
-        // <ContainerAbout>
-        //     <Header></Header>
-        // </ContainerAbout>
+        <ContainerAbout id="about">
+            <Header dark>{data.title}</Header>
+            <WrapperText>
+                <TextBlockAbout dark>
+                    <StructuredText data={data.atext}/>
+                </TextBlockAbout>
+            </WrapperText>
+
+        </ContainerAbout>
     );
 };
 

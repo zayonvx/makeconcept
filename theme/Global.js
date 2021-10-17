@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import styled from "styled-components";
 import colors from "./colors";
 import Montserrat from "../public/fonts/Montserrat-Regular.ttf"
 import MontserratBold from "../public/fonts/Montserrat-Bold.ttf"
@@ -30,8 +31,8 @@ export const Global =  createGlobalStyle`
     background-color: ${colors.bg.secondary};
     font-size: 14px;
     line-height: 20px;
-    min-width: 100vw;
-    min-height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
     overflow: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -50,4 +51,10 @@ export const Global =  createGlobalStyle`
   li {
     list-style: none;  
   }
+`
+
+export const Container = styled.div`
+  height: 900px;
+  width: 100%;
+  background-color: ${colors.bg.primary};
 `

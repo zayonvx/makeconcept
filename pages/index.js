@@ -10,7 +10,7 @@ import Partners from "../blocks/Partners/partners";
 import Contacts from "../blocks/Contacts/contacts";
 import Footer from "../blocks/Footer/footer";
 import App from "./App";
-import {Global} from "../theme/Global";
+import {Container, Global} from "../theme/Global";
 
 
 export async function getStaticProps() {
@@ -25,20 +25,20 @@ export async function getStaticProps() {
 }
 
 export default function Index({data}) {
-  const  { allMenus, makeconceptlogo, contact, mainpage} = data;
+  const  { allMenus, makeconceptlogo, contact, mainpage, about} = data;
   return (
-      <div>
+      <Container>
         <App/>
         <Global/>
         <Header menuItems = {allMenus} logo = {makeconceptlogo.logo} contacts = {contact}/>
         <MainPage data={mainpage}/>
-        <About/>
+        <About data={about}/>
         <Portfolio/>
         <Services/>
         <Certification/>
         <Partners/>
         <Contacts/>
         <Footer/>
-      </div>
+      </Container>
   );
 }

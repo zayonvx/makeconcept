@@ -17,10 +17,15 @@ export const hiddenHeader = styled.h1`
   display: none;
 `
 
-export const sectionHeader = (props) => styled.h2`
+export const sectionHeader = styled.h2`
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
-  border-bottom: 1px solid ${props.dark ? colors.text.headerDark : colors.text.headerLight};
-  color: ${props.dark ? colors.text.headerDark : colors.text.headerLight};
+  border-bottom: 1px solid ${props => props.dark ? colors.text.headerDark : colors.text.headerLight};
+  color: ${props => props.dark ? colors.text.headerDark : colors.text.headerLight};
+`
+
+export const textBlock = styled.p`
+  font-size: 14px;
+  color: ${props => props.dark ? colors.text.headerDark : colors.text.primary};
 `
