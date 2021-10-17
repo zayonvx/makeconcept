@@ -14,10 +14,10 @@ import {Container} from "../../components/ui/container";
 
 const Portfolio = ({data, gallery}) => {
     return (
-        <Container full id="portfolio">
+        <Container id="portfolio">
             <Header dark>{data.title}</Header>
             <div>
-                <Swiper navigation={true} watchSlidesProgress={true} slidesPerView={3} className="mySwiper">
+                <Swiper navigation={true} watchSlidesProgress={true} slidesPerView={1} className="mySwiper">
                     {gallery.images.map(image =>
                         <SwiperSlide key={image.url}>
                                 <SliderImage src={image.url}/>

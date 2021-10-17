@@ -30,9 +30,8 @@ export const Global =  createGlobalStyle`
     color: ${colors.text.primary};
     background-color: ${colors.bg.secondary};
     font-size: 14px;
-    line-height: 20px;
-    min-width: 100%;
-    min-height: 100%;
+    line-height: 1.35em;
+    height: 100%;
     overflow: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -51,10 +50,4 @@ export const Global =  createGlobalStyle`
   li {
     list-style: none;  
   }
-`
-
-export const Container = styled.div`
-  height: 900px;
-  width: 100%;
-  background-color: ${colors.bg.primary};
-`
+  `;
