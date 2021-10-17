@@ -19,7 +19,7 @@ const Portfolio = ({data, gallery}) => {
             <div>
                 <Swiper zoom={true} navigation={true} watchSlidesProgress={true} slidesPerView={3} className="mySwiper">
                     {gallery.images.map(image =>
-                        <SwiperSlide>
+                        <SwiperSlide key={image.url}>
                                 <SliderImage src={image.url}/>
                         </SwiperSlide>
                     )}

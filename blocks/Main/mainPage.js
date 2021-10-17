@@ -19,7 +19,7 @@ const MainPage = ({data}) => {
                 <Swiper spaceBetween={3000} effect={'fade'} speed={5000} className="mySwiper" autoplay={{
                     "delay": 10000}}>
                     {data.slider.map(slide =>
-                        <SwiperSlide>
+                        <SwiperSlide key={slide.url}>
                             <motion.div
                                 animate={{ scale: 1.7}}
                                 transition={{ease: "easeOut", duration: 120, repeat: Infinity,
