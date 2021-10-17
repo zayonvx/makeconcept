@@ -25,7 +25,7 @@ export async function getStaticProps() {
 }
 
 export default function Index({data}) {
-  const  { allMenus, makeconceptlogo, contact, mainpage, about, portfolio} = data;
+  const  { allMenus, makeconceptlogo, contact, mainpage, about, portfolio, gallery} = data;
   return (
       <Container>
         <App/>
@@ -33,7 +33,7 @@ export default function Index({data}) {
         <Header menuItems = {allMenus} logo = {makeconceptlogo.logo} contacts = {contact}/>
         <MainPage data={mainpage}/>
         <About data={about}/>
-        <Portfolio data={portfolio}/>
+        <Portfolio data={portfolio} gallery={gallery}/>
         <Services/>
         <Certification/>
         <Partners/>

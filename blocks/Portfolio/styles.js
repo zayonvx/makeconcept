@@ -9,3 +9,14 @@ export const ContainerPortfolio = styled(Container)`
 export const Header = styled(sectionHeader)`
   margin-bottom: 20px;
 `
+
+export const SliderImage = styled.img`
+  width: 100%;
+  height: 400px;
+`
+
+export const SwiperWrapper = styled.div`
+  width: 960px;
+  overflow: hidden;
+  margin: 0 auto;
+`

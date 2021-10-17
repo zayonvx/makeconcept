@@ -6,13 +6,12 @@ export const SliderImage = styled.img`
   height: 900px;
 `
 
-export const Container = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 100%;
   height: auto;
   position: relative;
-  margin-bottom: 50px;
 `
 
 export const ButtonMain = styled(ButtonMint)`

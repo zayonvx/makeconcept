@@ -7,14 +7,14 @@ import 'swiper/css/bundle';
 import SwiperCore, {
     EffectFade,Navigation,Pagination,Autoplay
 } from 'swiper';
-import {ButtonMain, Container, HiddenHeader, SliderImage} from "./styles";
-import {hiddenHeader} from "../../theme/text";
+import {ButtonMain, HiddenHeader, SliderImage} from "./styles";
+import {Container} from "../../components/ui/container";
 
 SwiperCore.use([EffectFade,Navigation,Pagination,Autoplay]);
 
 const MainPage = ({data}) => {
     return (
-        <Container>
+        <Container full>
             <div>
                 <Swiper spaceBetween={3000} effect={'fade'} speed={5000} className="mySwiper" autoplay={{
                     "delay": 10000}}>

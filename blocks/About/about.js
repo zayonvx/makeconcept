@@ -1,13 +1,14 @@
 import React from 'react';
-import {ContainerAbout, Header, TextBlockAbout, WrapperText} from "./style";
+import {Header, TextBlockAbout, WrapperText} from "./style";
 import {StructuredText} from "react-datocms";
 import {ReactCompareSlider, ReactCompareSliderImage} from "react-compare-slider";
+import {Container} from "../../components/ui/container";
 
 
 
 const About = ({data}) => {
     return (
-        <ContainerAbout id="about">
+        <Container id="about">
             <Header dark>{data.title}</Header>
             <WrapperText>
                 <TextBlockAbout dark>
@@ -19,7 +20,7 @@ const About = ({data}) => {
                 itemTwo = {<ReactCompareSliderImage src={data.aslider[1].url} alt={data.aslider[0].url}/>}
             >
             </ReactCompareSlider>
-        </ContainerAbout>
+        </Container>
     );
 };
 

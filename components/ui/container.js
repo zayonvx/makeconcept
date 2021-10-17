@@ -1,10 +1,14 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import colors from "../../theme/colors";
 
 export const Container = styled.section`
-  width: 960px;
-  height: auto;
-  margin: 0 auto;
   display: flex;
-  background: ${colors.bg.secondary};
+  flex-direction: column;
+  height: auto;
+  position: relative;
+  max-width: ${props => props.full ? "100%" : "960px"};
+  background: ${props => props.dark ? colors.bg.primary : colors.bg.secondary};
+  margin: ${props => props.full? "0" : "0 auto"};
+  margin-bottom: 50px;
 `
+

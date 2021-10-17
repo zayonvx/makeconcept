@@ -1,14 +1,31 @@
 import React from 'react';
-import {ContainerAbout, Header, TextBlockAbout, WrapperText} from "../About/style";
-import {StructuredText} from "react-datocms";
-import {ReactCompareSlider, ReactCompareSliderImage} from "react-compare-slider";
-import {ContainerPortfolio} from "./styles";
+import {Header, SliderImage, SwiperWrapper} from "./styles";
+import 'swiper/css/bundle';
 
-const Portfolio = ({data}) => {
+import SwiperCore, {
+    EffectFade,Navigation,Pagination,Autoplay,Zoom
+} from 'swiper';
+
+SwiperCore.use([EffectFade,Navigation,Pagination,Autoplay,Zoom]);
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import {Container} from "../../components/ui/container";
+
+
+const Portfolio = ({data, gallery}) => {
     return (
-        <ContainerPortfolio id="portfolio">
+        <Container full id="portfolio">
             <Header dark>{data.title}</Header>
-        </ContainerPortfolio>
+            <div>
+                <Swiper zoom={true} navigation={true} watchSlidesProgress={true} slidesPerView={3} className="mySwiper">
+                    {gallery.images.map(image =>
+                        <SwiperSlide>
+                                <SliderImage src={image.url}/>
+                        </SwiperSlide>
+                    )}
+                </Swiper>
+            </div>
+        </Container>
     );
 };
 
