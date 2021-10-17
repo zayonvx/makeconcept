@@ -18,4 +18,5 @@ export const WrapperText = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 `
