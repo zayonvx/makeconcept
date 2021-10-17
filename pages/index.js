@@ -31,7 +31,7 @@ export default function Index({data}) {
         <App/>
         <Global/>
         <Header menuItems = {allMenus} logo = {makeconceptlogo.logo} contacts = {contact}/>
-        <MainPage title={mainpage.title} slider={mainpage.slider}/>
+        <MainPage data={mainpage}/>
         <About/>
         <Portfolio/>
         <Services/>
