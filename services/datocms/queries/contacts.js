@@ -3,5 +3,7 @@ export const CONTACTS_INFO = `contact {
         email
         telegram
         watsap
+        linktel
+        linkmail
         instagram
     }`

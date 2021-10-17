@@ -8,13 +8,13 @@ const MenuContacts = ({contactsInfo}) => {
         <div>
             <ContainerColumn>
                 <li>
-                    <ContactsLinkText href={contactsInfo.tel}>
+                    <ContactsLinkText href={contactsInfo.linktel}>
                         <FaPhone/>
                         {contactsInfo.tel}
                     </ContactsLinkText>
                 </li>
                 <li>
-                    <ContactsLinkText href={contactsInfo.email}>
+                    <ContactsLinkText href={contactsInfo.linkmail}>
                         <MdAlternateEmail/>
                         {contactsInfo.email}
                     </ContactsLinkText>
@@ -22,17 +22,17 @@ const MenuContacts = ({contactsInfo}) => {
             </ContainerColumn>
             <ContainerRow>
                 <li>
-                    <SocialLinkText href={contactsInfo.telegram}>
+                    <SocialLinkText target="_blank" href={contactsInfo.telegram}>
                         <FaTelegramPlane/>
                     </SocialLinkText>
                 </li>
                 <li>
-                    <SocialLinkText href={contactsInfo.watsup}>
+                    <SocialLinkText target="_blank" href={contactsInfo.watsap}>
                         <FaWhatsapp/>
                     </SocialLinkText>
                 </li>
                 <li>
-                    <SocialLinkText href={contactsInfo.instagram}>
+                    <SocialLinkText target="_blank" href={contactsInfo.instagram}>
                         <FaInstagram/>
                     </SocialLinkText>
                 </li>
