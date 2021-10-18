@@ -2,7 +2,6 @@ import React from 'react';
 import {StructuredText} from "react-datocms";
 import {Container} from "../../components/ui/container";
 import {ItemHeader, ItemImage, ItemsWrapper, ItemWrapper, SectionHeader} from "./styles";
-import {ButtonMain} from "../Main/styles";
 
 const Services = ({data, items}) => {
     console.log(items);
