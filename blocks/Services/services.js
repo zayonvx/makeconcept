@@ -4,7 +4,6 @@ import {Container} from "../../components/ui/container";
 import {ItemHeader, ItemImage, ItemsWrapper, ItemWrapper, SectionHeader} from "./styles";
 
 const Services = ({data, items}) => {
-    console.log(items);
     return (
         <Container dark>
             <SectionHeader>{data.title}</SectionHeader>

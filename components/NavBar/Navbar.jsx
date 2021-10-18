@@ -6,11 +6,6 @@ import Container from "./styles";
 
 
 const NavBar = ({menuItems}) => {
-    const menuRef = useRef(null);
-    const [isActive, setIsActive] = useState(false);
-    const onClick = () => {
-        setIsActive(!isActive);
-    }
     return (
         <Container>
             {menuItems.map(menu =>
