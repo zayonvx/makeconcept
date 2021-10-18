@@ -5,6 +5,7 @@ import {CONTACTS_INFO_QUERY} from "./contacts";
 import {ABOUT_PAGE_QUERY} from "./about";
 import {PORTFOLIO_PAGE_QUERY} from "./portfolio";
 import {GALLERY_IMAGES_QUERY} from "./gallery";
+import {SERVICE_PAGE_QUERY} from "./service";
 
 export const queries = `query rootQuery {
  ${MAIN_PAGE_QUERY}
@@ -12,5 +13,6 @@ export const queries = `query rootQuery {
  ${LOGO_QUERY}
  ${MENU_QUERY}
  ${GALLERY_IMAGES_QUERY} 
+ ${SERVICE_PAGE_QUERY}
  ${CONTACTS_INFO_QUERY}
  ${ABOUT_PAGE_QUERY}}`;
