@@ -12,11 +12,12 @@ export const Header = styled(sectionHeader)`
 
 export const SliderImage = styled.img`
   width: 100%;
-  height: 400px;
+  height: auto;
 `
 
 export const SwiperWrapper = styled.div`
   width: 960px;
+  height: 600px;
   overflow: hidden;
   margin: 0 auto;
 `

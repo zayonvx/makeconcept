@@ -16,7 +16,7 @@ const Portfolio = ({data, gallery}) => {
     return (
         <Container id="portfolio">
             <Header dark>{data.title}</Header>
-            <div>
+            <SwiperWrapper>
                 <Swiper navigation={true} watchSlidesProgress={true} slidesPerView={1} className="mySwiper">
                     {gallery.images.map(image =>
                         <SwiperSlide key={image.url}>
@@ -24,7 +24,7 @@ const Portfolio = ({data, gallery}) => {
                         </SwiperSlide>
                     )}
                 </Swiper>
-            </div>
+            </SwiperWrapper>
         </Container>
     );
 };
