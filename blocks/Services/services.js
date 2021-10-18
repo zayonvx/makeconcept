@@ -9,7 +9,7 @@ const Services = ({data, items}) => {
             <SectionHeader>{data.title}</SectionHeader>
             <ItemsWrapper>
             {items.map(item =>
-            <ItemWrapper>
+            <ItemWrapper key={item.title}>
                     <ItemImage src={item.image.url} alt="test"/>
                     <ItemHeader>{item.title}</ItemHeader>
                     <StructuredText data={item.description}/>
