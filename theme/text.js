@@ -18,6 +18,9 @@ export const hiddenHeader = styled.h1`
 `
 
 export const sectionHeader = styled.h2`
+  display: block;
+  margin: 0 auto;
+  width: 300px;
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;

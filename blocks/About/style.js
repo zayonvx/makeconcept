@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {sectionHeader, textBlock} from "../../theme/text";
+import colors from "../../theme/colors";
 
 export const Header = styled(sectionHeader)`
   margin-bottom: 20px;
