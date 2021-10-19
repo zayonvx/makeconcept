@@ -14,10 +14,12 @@ const colors = {
         headerDark: palette.blackSignal,
     },
     button: {
-        buttonBackground: palette.mint,
-        buttonText: palette.whiteDark,
+        buttonBackgroundMint: palette.mint,
+        buttonBackgroundOrange: palette.lightOrange,
+        buttonTextLight: palette.whiteDark,
+        buttonTextDark: palette.blackSignal,
         hover: {
-            buttonBackground: palette.pink,
+            buttonBackgroundPink: palette.pink,
         },
     },
 

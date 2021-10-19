@@ -19,6 +19,8 @@ export const ButtonMain = styled(ButtonMint)`
   z-index: 5;
   align-self: center;
   top: 50%;
+  padding: 20px 50px;
+  font-size: 18px;
 `
 export const HiddenHeader = styled.h1`
   display: none;
