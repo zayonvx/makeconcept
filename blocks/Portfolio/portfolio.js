@@ -10,17 +10,19 @@ SwiperCore.use([EffectFade,Navigation,Pagination,Autoplay]);
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import {Container} from "../../components/ui/container";
+import {SectionHeader} from "../../theme/text";
+import {ItemImage} from "../../theme/image";
 
 
 const Portfolio = ({data, gallery}) => {
     return (
         <Container id="portfolio">
-            <Header dark>{data.title}</Header>
+            <SectionHeader dark>{data.title}</SectionHeader>
             <SwiperWrapper>
                 <Swiper navigation={true} watchSlidesProgress={true} slidesPerView={1} className="mySwiper">
                     {gallery.images.map(image =>
                         <SwiperSlide key={image.url}>
-                                <SliderImage src={image.url}/>
+                                <ItemImage src={image.url}/>
                         </SwiperSlide>
                     )}
                 </Swiper>

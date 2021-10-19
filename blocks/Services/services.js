@@ -1,7 +1,8 @@
 import React from 'react';
-import {StructuredText} from "react-datocms";
 import {Container} from "../../components/ui/container";
-import {ItemHeader, ItemImage, ItemsWrapper, ItemWrapper, SectionHeader} from "./styles";
+import {ItemHeader, ItemsWrapper, ItemWrapper, Text} from "./styles";
+import {SectionHeader, TextWrapper} from "../../theme/text";
+import {ItemImage} from "../../theme/image";
 
 const Services = ({data, items}) => {
     return (
@@ -12,7 +13,7 @@ const Services = ({data, items}) => {
             <ItemWrapper key={item.title}>
                     <ItemImage src={item.image.url} alt="test"/>
                     <ItemHeader>{item.title}</ItemHeader>
-                    <StructuredText data={item.description}/>
+                    <TextWrapper data={item.description}/>
             </ItemWrapper>
             )}
             </ItemsWrapper>

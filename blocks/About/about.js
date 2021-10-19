@@ -1,20 +1,21 @@
 import React from 'react';
-import {Header, TextBlockAbout, WrapperText} from "./style";
+import {Header, TextBlockAbout, WrapperText} from "./styles";
 import {ReactCompareSlider, ReactCompareSliderImage} from "react-compare-slider";
 import {Container} from "../../components/ui/container";
-import {StructuredText} from "react-datocms";
+import {SectionHeader, TextWrapper, textWrapper} from "../../theme/text";
+import {Wrapper} from "./styles";
 
 
 
 const About = ({data}) => {
     return (
         <Container id="about">
-            <Header dark>{data.title}</Header>
-            <WrapperText>
+            <SectionHeader dark>{data.title}</SectionHeader>
+            <Wrapper>
                 <TextBlockAbout dark>
-                    <StructuredText data={data.atext}/>
+                    <TextWrapper data={data.atext}/>
                 </TextBlockAbout>
-            </WrapperText>
+            </Wrapper>
             <ReactCompareSlider
                 itemOne = {<ReactCompareSliderImage src={data.aslider[0].url} alt={data.aslider[0].url}/>}
                 itemTwo = {<ReactCompareSliderImage src={data.aslider[1].url} alt={data.aslider[0].url}/>}
