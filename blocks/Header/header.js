@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, HeaderBlock, HeaderDescription, HeaderText} from "./styles";
+import {Container, HeaderBlock, HeaderDescription, HeaderText, LogoWrapper} from "./styles";
 import NavBar from "../../components/NavBar/Navbar";
 import Logo from "../../components/Logo/logo";
 import MenuContacts from "../../components/MenuContacts/menuContacts";
@@ -7,15 +7,17 @@ import MenuContacts from "../../components/MenuContacts/menuContacts";
 const Header = ({menuItems, logo, contacts}) => {
     return (
         <Container>
-            <Logo data={logo}/>
-            <HeaderBlock>
-                <HeaderText>
-                    Concept
-                </HeaderText>
-                <HeaderDescription>
-                    Студия дизайна интерьера
-                </HeaderDescription>
-            </HeaderBlock>
+            <LogoWrapper>
+                <Logo data={logo}/>
+                <HeaderBlock>
+                    <HeaderText>
+                        Make Concept
+                    </HeaderText>
+                    <HeaderDescription>
+                        Студия интерьерного дизайна
+                    </HeaderDescription>
+                </HeaderBlock>
+            </LogoWrapper>
             <NavBar menuItems={menuItems}/>
             <MenuContacts contactsInfo={contacts}/>
         </Container>

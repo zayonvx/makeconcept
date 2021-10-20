@@ -4,7 +4,6 @@ import {Row} from "../ui/row";
 
 const Container = styled(Row)`
   flex-direction: row;
-  margin-right: 20px;
 `;
 
 export default Container;

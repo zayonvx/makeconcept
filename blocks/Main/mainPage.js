@@ -21,9 +21,8 @@ const MainPage = ({data}) => {
                     {data.slider.map(slide =>
                         <SwiperSlide key={slide.url}>
                             <motion.div
-                                animate={{ scale: 1.7}}
-                                transition={{ease: "easeOut", duration: 120, repeat: Infinity,
-                                    repeatType: "reverse", repeatDelay: 1}}
+                                animate={{ scale: 1.2}}
+                                transition={{ease: "easeOut", duration: 60, repeat: Infinity, repeatType: "reverse", repeatDelay: 0}}
                             >
                                 <SliderImage src={slide.url}/>
                             </motion.div>

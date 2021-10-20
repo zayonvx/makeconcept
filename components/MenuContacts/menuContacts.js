@@ -1,43 +1,46 @@
 import React from 'react';
-import {FaTelegramPlane, FaWhatsapp, FaInstagram, FaPhone} from 'react-icons/fa';
-import {MdAlternateEmail} from 'react-icons/md'
-import {ContainerRow, ContainerColumn, ContactsLinkText, SocialLinkText} from "./styles";
+import {FaTelegramPlane, FaWhatsapp, FaInstagram,} from 'react-icons/fa'
+
+import {
+    ContainerColumn,
+    SocialLinkText,
+    ContactsLinkTel,
+    ContactsLinkMail, ContactsItem, ContactsWrapper, SocialItem
+} from "./styles";
 
 const MenuContacts = ({contactsInfo}) => {
     return (
-        <div>
+        <ContactsWrapper>
             <ContainerColumn>
-                <li>
-                    <ContactsLinkText href={contactsInfo.linktel}>
-                        <FaPhone/>
+                <ContactsItem>
+                    <ContactsLinkTel href={contactsInfo.linktel}>
                         {contactsInfo.tel}
-                    </ContactsLinkText>
-                </li>
-                <li>
-                    <ContactsLinkText href={contactsInfo.linkmail}>
-                        <MdAlternateEmail/>
+                    </ContactsLinkTel>
+                </ContactsItem>
+                <ContactsItem>
+                    <ContactsLinkMail href={contactsInfo.linkmail}>
                         {contactsInfo.email}
-                    </ContactsLinkText>
-                </li>
+                    </ContactsLinkMail>
+                </ContactsItem>
             </ContainerColumn>
-            <ContainerRow>
-                <li>
+            <ContainerColumn>
+                <SocialItem>
                     <SocialLinkText target="_blank" href={contactsInfo.telegram}>
                         <FaTelegramPlane/>
                     </SocialLinkText>
-                </li>
-                <li>
+                </SocialItem>
+                <SocialItem>
                     <SocialLinkText target="_blank" href={contactsInfo.watsap}>
                         <FaWhatsapp/>
                     </SocialLinkText>
-                </li>
-                <li>
+                </SocialItem>
+                <SocialItem>
                     <SocialLinkText target="_blank" href={contactsInfo.instagram}>
                         <FaInstagram/>
                     </SocialLinkText>
-                </li>
-            </ContainerRow>
-        </div>
+                </SocialItem>
+            </ContainerColumn>
+        </ContactsWrapper>
     );
 };
 
