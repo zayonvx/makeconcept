@@ -21,7 +21,7 @@ export const SocialLinkText = styled(textLink)`
 export const ContactsLinkText = styled(textLink)`
   font-size: 12px;
   &:before {
-    padding-left: 5px;
+    padding-left: 10px;
   }
 `
 
