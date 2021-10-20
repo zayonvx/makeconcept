@@ -7,7 +7,7 @@ import {
     ContactsLinkText,
     SocialLinkText,
     ContactsLinkTel,
-    ContactsLinkMail, SocialIconTel, SocialIconMail, ContactsItem, ContactsWrapper
+    ContactsLinkMail, SocialIconTel, SocialIconMail, ContactsItem, ContactsWrapper, SocialItem
 } from "./styles";
 
 const MenuContacts = ({contactsInfo}) => {
@@ -26,21 +26,21 @@ const MenuContacts = ({contactsInfo}) => {
                 </ContactsItem>
             </ContainerColumn>
             <ContainerColumn>
-                <li>
+                <SocialItem>
                     <SocialLinkText target="_blank" href={contactsInfo.telegram}>
                         <FaTelegramPlane/>
                     </SocialLinkText>
-                </li>
-                <li>
+                </SocialItem>
+                <SocialItem>
                     <SocialLinkText target="_blank" href={contactsInfo.watsap}>
                         <FaWhatsapp/>
                     </SocialLinkText>
-                </li>
-                <li>
+                </SocialItem>
+                <SocialItem>
                     <SocialLinkText target="_blank" href={contactsInfo.instagram}>
                         <FaInstagram/>
                     </SocialLinkText>
-                </li>
+                </SocialItem>
             </ContainerColumn>
         </ContactsWrapper>
     );

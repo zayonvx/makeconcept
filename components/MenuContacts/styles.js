@@ -15,6 +15,10 @@ export const ContainerColumn = styled.ul`
   margin-bottom: 10px;
 `
 
+export const SocialItem = styled.li`
+
+`
+
 export const SocialLinkText = styled(textLink)`
 `
 
