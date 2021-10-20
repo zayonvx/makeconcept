@@ -1,26 +1,31 @@
 import React from 'react';
-import {FaTelegramPlane, FaWhatsapp, FaInstagram, FaPhone} from 'react-icons/fa';
-import {MdAlternateEmail} from 'react-icons/md'
-import {ContainerRow, ContainerColumn, ContactsLinkText, SocialLinkText} from "./styles";
+import {FaTelegramPlane, FaWhatsapp, FaInstagram,} from 'react-icons/fa'
+
+import {
+    ContainerRow,
+    ContainerColumn,
+    ContactsLinkText,
+    SocialLinkText,
+    ContactsLinkTel,
+    ContactsLinkMail, SocialIconTel, SocialIconMail, ContactsItem, ContactsWrapper
+} from "./styles";
 
 const MenuContacts = ({contactsInfo}) => {
     return (
-        <div>
+        <ContactsWrapper>
             <ContainerColumn>
-                <li>
-                    <ContactsLinkText href={contactsInfo.linktel}>
-                        <FaPhone/>
+                <ContactsItem>
+                    <ContactsLinkTel href={contactsInfo.linktel}>
                         {contactsInfo.tel}
-                    </ContactsLinkText>
-                </li>
-                <li>
-                    <ContactsLinkText href={contactsInfo.linkmail}>
-                        <MdAlternateEmail/>
+                    </ContactsLinkTel>
+                </ContactsItem>
+                <ContactsItem>
+                    <ContactsLinkMail href={contactsInfo.linkmail}>
                         {contactsInfo.email}
-                    </ContactsLinkText>
-                </li>
+                    </ContactsLinkMail>
+                </ContactsItem>
             </ContainerColumn>
-            <ContainerRow>
+            <ContainerColumn>
                 <li>
                     <SocialLinkText target="_blank" href={contactsInfo.telegram}>
                         <FaTelegramPlane/>
@@ -36,8 +41,8 @@ const MenuContacts = ({contactsInfo}) => {
                         <FaInstagram/>
                     </SocialLinkText>
                 </li>
-            </ContainerRow>
-        </div>
+            </ContainerColumn>
+        </ContactsWrapper>
     );
 };
 
