@@ -41,7 +41,9 @@ export const ContactsLinkTel = styled(textLink)`
 
 export const ContactsLinkMail = styled(textLink)`
   font-size: 12px;
-  
+  &:before {
+    padding-left: 10px;
+  }
 `
 
 export const ContactsItem = styled.li`
