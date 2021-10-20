@@ -2,12 +2,10 @@ import React from 'react';
 import {FaTelegramPlane, FaWhatsapp, FaInstagram,} from 'react-icons/fa'
 
 import {
-    ContainerRow,
     ContainerColumn,
-    ContactsLinkText,
     SocialLinkText,
     ContactsLinkTel,
-    ContactsLinkMail, SocialIconTel, SocialIconMail, ContactsItem, ContactsWrapper, SocialItem
+    ContactsLinkMail, ContactsItem, ContactsWrapper, SocialItem
 } from "./styles";
 
 const MenuContacts = ({contactsInfo}) => {
