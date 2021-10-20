@@ -13,16 +13,23 @@ export const Container = styled(Row)`
     position: fixed;
     z-index: 10;
     top: 0;
+    justify-content: space-between;
 `
 export const HeaderBlock = styled.div`
-  margin-right: auto;
-  margin-left: 20px;
+  
+`
+
+export const LogoWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 `
 
 export const HeaderText = styled.h1`
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  font-weight: 400;
 `
 export const HeaderDescription = styled.p`
   font-size: 12px;
