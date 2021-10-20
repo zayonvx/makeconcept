@@ -28,6 +28,10 @@ export const ContainerColumn = styled.ul`
   }
 `
 
+export const SocialItem = styled.li`
+
+`
+
 export const SocialLinkText = styled(textLink)`
 `
 
