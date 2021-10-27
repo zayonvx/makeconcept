@@ -14,14 +14,26 @@ export const Wrapper = styled.div`
   position: relative;
 `
 
-export const ButtonMain = styled(ButtonOrange)`
+export const InfoWrapper = styled.div`
   position: absolute;
   z-index: 5;
   align-self: center;
   top: 50%;
-  padding: 20px 50px;
-  font-size: 18px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  border-radius: 15px;
 `
-export const HiddenHeader = styled.h1`
-  display: none;
+
+export const ButtonMain = styled(ButtonOrange)`
+  padding: 15px 30px;
+  font-size: 16px;
+`
+export const Header = styled.h1`
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
 `
