@@ -1,11 +1,9 @@
 import React, {useState} from 'react';
 import {Container} from "../../components/ui/container";
-import {ItemButton, ItemHeader, ItemImageServices, ItemMask, ItemsWrapper, ItemWrapper, Text} from "./styles";
-import {SectionHeader, TextWrapper} from "../../theme/text";
-import {ItemImage} from "../../theme/image";
+import {ItemButton, ItemHeader, ItemImageServices, ItemsWrapper, ItemWrapper, Text} from "./styles";
+import {SectionHeader} from "../../theme/text";
 
 const Services = ({data, items}) => {
-    const [visible, setVisible] = useState(false);
     return (
         <Container dark>
             <SectionHeader>{data.title}</SectionHeader>
