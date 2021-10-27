@@ -32,6 +32,7 @@ export const ContactsLinkTel = styled(textLink)`
 export const ContactsLinkMail = styled(textLink)`
   font-size: 12px;
   line-height: 12px;
+  text-transform: lowercase;
 `
 
 export const ContactsWrapper = styled.div`

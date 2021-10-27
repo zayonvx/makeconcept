@@ -12,18 +12,6 @@ const MenuContacts = ({contactsInfo}) => {
     return (
         <ContactsWrapper>
             <ContainerColumn>
-                <ContactsItem>
-                    <ContactsLinkTel href={contactsInfo.linktel}>
-                        {contactsInfo.tel}
-                    </ContactsLinkTel>
-                </ContactsItem>
-                <ContactsItem>
-                    <ContactsLinkMail href={contactsInfo.linkmail}>
-                        {contactsInfo.email}
-                    </ContactsLinkMail>
-                </ContactsItem>
-            </ContainerColumn>
-            <ContainerColumn>
                 <SocialItem>
                     <SocialLinkText target="_blank" href={contactsInfo.telegram}>
                         <FaTelegramPlane/>
@@ -39,6 +27,18 @@ const MenuContacts = ({contactsInfo}) => {
                         <FaInstagram/>
                     </SocialLinkText>
                 </SocialItem>
+            </ContainerColumn>
+            <ContainerColumn>
+                <ContactsItem>
+                    <ContactsLinkTel href={contactsInfo.linktel}>
+                        {contactsInfo.tel}
+                    </ContactsLinkTel>
+                </ContactsItem>
+                <ContactsItem>
+                    <ContactsLinkMail href={contactsInfo.linkmail}>
+                        {contactsInfo.email}
+                    </ContactsLinkMail>
+                </ContactsItem>
             </ContainerColumn>
         </ContactsWrapper>
     );

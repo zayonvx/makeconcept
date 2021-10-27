@@ -4,6 +4,7 @@ const colors = {
     bg: {
         primary: palette.blackSignal,
         secondary: palette.whiteDark,
+        alternate: palette.black,
     },
     text: {
         primary: palette.white,

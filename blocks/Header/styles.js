@@ -5,8 +5,7 @@ import colors from "../../theme/colors";
 
 export const Container = styled(Row)`
     width: 100%;
-    background: ${colors.bg.primary};
-    opacity: .8;
+    background: ${colors.bg.alternate};
     align-items: center;
     padding-left: 25px;
     padding-right: 25px;

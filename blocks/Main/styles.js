@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {ButtonMint} from "../../components/ui/button";
+import {ButtonMint, ButtonOrange} from "../../components/ui/button";
 
 export const SliderImage = styled.img`
   width: 100%;
@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
   position: relative;
 `
 
-export const ButtonMain = styled(ButtonMint)`
+export const ButtonMain = styled(ButtonOrange)`
   position: absolute;
   z-index: 5;
   align-self: center;
