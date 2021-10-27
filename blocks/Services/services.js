@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Container} from "../../components/ui/container";
-import {ItemButton, ItemHeader, ItemsWrapper, ItemWrapper, Text} from "./styles";
+import {ItemButton, ItemHeader, ItemImageServices, ItemMask, ItemsWrapper, ItemWrapper, Text} from "./styles";
 import {SectionHeader, TextWrapper} from "../../theme/text";
 import {ItemImage} from "../../theme/image";
 
@@ -12,10 +12,8 @@ const Services = ({data, items}) => {
             <ItemsWrapper>
             {items.map(item =>
             <ItemWrapper key={item.title}>
-                    <ItemImage src={item.image.url} alt="test"/>
+                    <ItemImageServices src={item.image.url} alt="test"/>
                     <ItemHeader>{item.title}</ItemHeader>
-                    <ItemButton onClick={() => setVisible(true)}>Подробнее</ItemButton>
-                    { visible ? <TextWrapper data={item.description}/> : null}
             </ItemWrapper>
             )}
             </ItemsWrapper>
