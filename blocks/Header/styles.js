@@ -10,7 +10,7 @@ export const Container = styled(Row)`
     padding-left: 25px;
     padding-right: 25px;
     position: fixed;
-    z-index: 10;
+    z-index: 999;
     top: 0;
     justify-content: space-between;
 `

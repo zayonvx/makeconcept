@@ -1,8 +1,4 @@
 import styled from "styled-components";
-import {StructuredText} from "react-datocms";
-import {ButtonBase} from "../../theme/buttons";
-import colors from "../../theme/colors";
-import {ButtonOrange} from "../../components/ui/button";
 import {ItemImage} from "../../theme/image";
 
 export const ItemsWrapper = styled.div`
@@ -22,13 +18,7 @@ export const ItemWrapper = styled.div`
   &:hover {
     transform: scale(1.2);
     z-index: 20;
-    h3 {
-      transition: ease 1s;
-      &:hover {
-        transform: translateY(10%);
-      }
     }
-  }
 `
 
 export const ItemHeader = styled.h3`
@@ -39,11 +29,7 @@ export const ItemHeader = styled.h3`
     position: absolute;
     top: 50%;
 `
-export const ItemButton = styled(ButtonOrange)`
-    padding: 5px 10px;
-    font-size: 14px;
-`
 
 export const ItemImageServices = styled(ItemImage)`
-    filter: brightness(40%);
+    filter: brightness(50%);
 `

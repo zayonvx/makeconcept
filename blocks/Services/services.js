@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Container} from "../../components/ui/container";
-import {ItemButton, ItemHeader, ItemImageServices, ItemsWrapper, ItemWrapper, Text} from "./styles";
+import {ItemHeader, ItemImageServices, ItemsWrapper, ItemWrapper, Text} from "./styles";
 import {SectionHeader} from "../../theme/text";
 
 const Services = ({data, items}) => {
