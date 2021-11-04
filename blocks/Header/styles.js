@@ -5,7 +5,7 @@ import colors from "../../theme/colors";
 
 export const Container = styled(Row)`
     width: 100%;
-    background: ${colors.bg.alternate};
+    background: rgba(0,0,0,0.8);
     align-items: center;
     padding-left: 25px;
     padding-right: 25px;
@@ -13,6 +13,8 @@ export const Container = styled(Row)`
     z-index: 999;
     top: 0;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
 `
 export const HeaderBlock = styled.div`
   height: 60px;

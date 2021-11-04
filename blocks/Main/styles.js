@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {ButtonMint, ButtonOrange} from "../../components/ui/button";
+import colors from "../../theme/colors";
 
 export const SliderImage = styled.img`
   width: 100%;
@@ -24,16 +25,25 @@ export const InfoWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #000;
-  border-radius: 15px;
+  background-color: rgba(244, 200, 140, 0.95);
 `
 
-export const ButtonMain = styled(ButtonOrange)`
+export const ButtonMain = styled(ButtonMint)`
   padding: 15px 30px;
   font-size: 16px;
+  color: ${colors.bg.primary}
 `
 export const Header = styled.h1`
   font-size: 22px;
   text-align: center;
   margin-bottom: 20px;
+  color: ${colors.bg.primary};
+  text-transform: uppercase;
+  font-weight: 400;
+`
+export const Description = styled.p`
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: ${colors.bg.primary};
 `
