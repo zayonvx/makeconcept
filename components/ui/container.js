@@ -6,7 +6,7 @@ export const Container = styled.section`
   flex-direction: column;
   height: auto;
   position: relative;
-  max-width: ${props => props.full ? "100%" : "960px"};
+  max-width: ${props => props.full ? "100%" : "1200px"};
   background: ${props => props.dark ? colors.bg.primary : colors.bg.secondary};
   margin: ${props => props.full? "0" : "0 auto"};
   padding-top: ${props => props.full? "0" : "10px"};

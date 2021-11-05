@@ -7,8 +7,6 @@ export const SERVICE_PAGE_QUERY = `
       url
     }
     title
-    description {
-      value
-    }
+    description
   }
 `
