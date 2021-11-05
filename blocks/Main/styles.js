@@ -3,15 +3,16 @@ import {ButtonMint, ButtonOrange} from "../../components/ui/button";
 import colors from "../../theme/colors";
 
 export const SliderImage = styled.img`
+  display: block;
   width: 100%;
-  height: 900px;
+  height: 100%;
+  object-fit: cover;
 `
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  height: auto;
   position: relative;
 `
 

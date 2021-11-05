@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const ItemImage = styled.img`
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `

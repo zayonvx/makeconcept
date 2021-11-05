@@ -15,7 +15,7 @@ const Portfolio = ({data, gallery}) => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     return (
         <Container id="portfolio">
-            <SectionHeader dark>Портфолио (на реконструкции)</SectionHeader>
+            <SectionHeader dark>Портфолио</SectionHeader>
             <SwiperWrapper>
                 <Swiper style={{'--swiper-navigation-color': '#fff','--swiper-pagination-color': '#fff'}} spaceBetween={10} navigation={true} loop={true} thumbs={{ swiper: thumbsSwiper }} className="mySwiper2">
                     {gallery.images.map(image =>

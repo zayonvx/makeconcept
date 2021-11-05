@@ -24,8 +24,8 @@ const Services = ({data, items}) => {
         setItemsToShow(4)
     }
     return (
-        <Container dark>
-            <SectionHeader>{data.title}</SectionHeader>
+        <Container>
+            <SectionHeader dark>{data.title}</SectionHeader>
             <ItemsWrapper>
             {items.slice(0, itemsToShow).map(item =>
             <ItemWrapper key={item.title}>

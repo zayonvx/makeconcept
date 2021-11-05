@@ -9,13 +9,14 @@ import SwiperCore, {
 } from 'swiper';
 import {ButtonMain, Description, Header, InfoWrapper, SliderImage} from "./styles";
 import {Container} from "../../components/ui/container";
+import {SwiperWrapper} from "../Portfolio/styles";
 
 SwiperCore.use([EffectFade,Navigation,Pagination,Autoplay]);
 
 const MainPage = ({data}) => {
     return (
-        <Container full>
-            <div>
+        <Container>
+            <SwiperWrapper>
                 <Swiper spaceBetween={3000} effect={'fade'} speed={5000} className="mySwiper" autoplay={{
                     "delay": 10000}}>
                     {data.slider.map(slide =>
@@ -29,7 +30,7 @@ const MainPage = ({data}) => {
                         </SwiperSlide>
                     )}
                 </Swiper>
-            </div>
+            </SwiperWrapper>
             <InfoWrapper>
                 <Header>
                     {data.title}
