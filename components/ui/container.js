@@ -9,7 +9,6 @@ export const Container = styled.section`
   max-width: ${props => props.full ? "100%" : "1200px"};
   background: ${props => props.dark ? colors.bg.primary : colors.bg.secondary};
   margin: ${props => props.full? "0" : "0 auto"};
-  padding-top: ${props => props.full? "0" : "10px"};
   margin-bottom: 50px;
 `
 

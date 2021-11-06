@@ -8,21 +8,43 @@ import SwiperCore, {
     FreeMode,Navigation,Thumbs
 } from 'swiper';
 import {ItemImage} from "../../theme/image";
-import {SwiperWrapper, ThumbsWrapper} from "./styles";
+import {GalleryPopup, SwiperWrapper, ThumbsWrapper} from "./styles";
+import Arrow from "../../components/Arrow/arrow";
+import {Button} from "../../components/Arrow/styles";
 SwiperCore.use([FreeMode,Navigation,Thumbs]);
+
+
 
 const Portfolio = ({data, gallery}) => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
+    const [fullView, changeViewTo] = useState(false);
+
+    const setFullView = () => {
+        changeViewTo(true);
+    }
+
+    const setNormalView = () => {
+        changeViewTo(false);
+    }
+
+
     return (
         <Container id="portfolio">
             <SectionHeader dark>Портфолио</SectionHeader>
             <SwiperWrapper>
-                <Swiper style={{'--swiper-navigation-color': '#fff','--swiper-pagination-color': '#fff'}} spaceBetween={10} navigation={true} loop={true} thumbs={{ swiper: thumbsSwiper }} className="mySwiper2">
-                    {gallery.images.map(image =>
-                        <SwiperSlide key={image.url}>
-                            <ItemImage src={image.url}/>
-                        </SwiperSlide>
-                    )}
+                <Swiper spaceBetween={10} loop={true} thumbs={{ swiper: thumbsSwiper }}
+                    navigation={{
+                        prevEl: '.button__prev',
+                        nextEl: '.button__next',
+                    }}
+                    className="mySwiper2">
+                    <Arrow/>
+                    <Arrow right/>
+                        {gallery.images.map(image =>
+                            <SwiperSlide key={image.url}>
+                                <ItemImage src={image.url}/>
+                            </SwiperSlide>
+                        )}
                     </Swiper>
             </SwiperWrapper>
             <ThumbsWrapper>

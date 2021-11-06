@@ -1,5 +1,4 @@
 import {createGlobalStyle} from "styled-components";
-import styled from "styled-components";
 import colors from "./colors";
 import Montserrat from "../public/fonts/Montserrat-Regular.ttf"
 import MontserratBold from "../public/fonts/Montserrat-Bold.ttf"
