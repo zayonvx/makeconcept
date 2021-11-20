@@ -8,5 +8,8 @@ export const SERVICE_PAGE_QUERY = `
     }
     title
     description
+    moredescription {
+        value
+    }
   }
 `
