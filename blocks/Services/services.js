@@ -41,14 +41,14 @@ const Services = ({data, items}) => {
     };
 
 
-    const [itemsToShow, setItemsToShow] = useState(4);
+    const [itemsToShow, setItemsToShow] = useState(2);
 
     const showMore = () => {
         setItemsToShow(items.length)
     }
 
     const showLess = () => {
-        setItemsToShow(4)
+        setItemsToShow(2)
     }
     return (
         <Container>
@@ -68,7 +68,7 @@ const Services = ({data, items}) => {
                             aria-labelledby="child-modal-title"
                             aria-describedby="child-modal-description"
                         >
-                            <Box sx={{ ...style, width: 900 }}>
+                            <Box sx={{ ...style, width: 900 , padding: 50}}>
                                 <TextBlockAbout dark>
                                     <TextWrapper data={item.moredescription}/>
                                 </TextBlockAbout>
@@ -79,7 +79,7 @@ const Services = ({data, items}) => {
             </ItemWrapper>
             )}
             </ItemsWrapper>
-            {(itemsToShow === 4) ? <MoreButton onClick={showMore}>Показать больше</MoreButton>
+            {(itemsToShow === 2) ? <MoreButton onClick={showMore}>Показать больше</MoreButton>
                 : <MoreButton onClick={showLess}>Скрыть элементы</MoreButton>}
 
         </Container>

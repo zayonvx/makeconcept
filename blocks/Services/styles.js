@@ -13,7 +13,7 @@ export const ItemsWrapper = styled.div`
 export const ItemWrapper = styled.div`
   position: relative;
   display: flex;
-  width: 24%;
+  width: 49%;
   flex-direction: column;
   align-items: center;
   padding-bottom: 10px;
@@ -44,10 +44,12 @@ export const ItemDescription = styled(TextBlock)`
 export const ItemTextWrapper = styled.div`
     position: absolute;
     top: 50%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 `
 
 export const ItemButton = styled(ButtonOrange)`
