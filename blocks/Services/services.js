@@ -68,7 +68,7 @@ const Services = ({data, items}) => {
                             aria-labelledby="child-modal-title"
                             aria-describedby="child-modal-description"
                         >
-                            <Box sx={{ ...style, width: 900 , padding: 50}}>
+                            <Box sx={{ ...style, width: 900 , padding: 10}}>
                                 <TextBlockAbout dark>
                                     <TextWrapper data={item.moredescription}/>
                                 </TextBlockAbout>
